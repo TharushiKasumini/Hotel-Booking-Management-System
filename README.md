@@ -60,4 +60,14 @@ curl -X POST http://localhost:8080/auth/register \
 
 ```
 
+## If you are running CURL on Windows PowerShell use the below command
+
+```bash
+Invoke-WebRequest -Uri "http://localhost:8080/auth/register" `
+    -Method POST `
+    -Headers @{ "Content-Type" = "application/json" } `
+    -Body '{"email": "admin@gmail.com", "password": "admin", "phoneNumber": "0712345678", "name": "Hotel Admin", "role": "ADMIN"}'
+
+```
+
 
