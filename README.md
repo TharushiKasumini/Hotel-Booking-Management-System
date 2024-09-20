@@ -51,4 +51,13 @@ npm start
 Install MySQL and Run the `Create_Database.sql` script to create the database.
 
 ## Create Admin user using Postman or any other API client bv specifying the role as `ADMIN`.
+## If not run the following CURL for create Admin
+
+```bash
+curl -X POST http://localhost:8080/auth/register \
+     -H "Content-Type: application/json" \
+     -d '{"email": "admin@gmail.com", "password": "admin", "phoneNumber": "0712345678", "name": "Hotel Admin", "role": "ADMIN"}'
+
+```
+
 
